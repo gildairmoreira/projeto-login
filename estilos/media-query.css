@@ -35,7 +35,7 @@ Grande Telas: acima de 1200px
     }
     section#login{
         width: 950px;
-        height: 370px;
+        height: 350px;
     }
     section#login > div#imagem {
         float: right;
@@ -51,7 +51,7 @@ Grande Telas: acima de 1200px
     }
     div#formulario > p {
         font-size: 1.1em;
-        margin: 12px 0px;
+        margin: 20px 0px;
     }
     
 }

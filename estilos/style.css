@@ -84,7 +84,7 @@ div.campo>label {
 
 div.campo>span {
     color: white;
-    font-size: 2em;
+    font-size: 1.9em;
     width: 40px;
     padding: 5px;
 }
@@ -97,11 +97,12 @@ div.campo>input {
     border: 0px;
     padding: 4px;
     border-radius: 8px;
-    transform: translateY(-13px);
+    transform: translateY(-10px);/* 12,5 */
 }
 
 div.campo>input:focus-within {
     background-color: white;
+    border: none;
 }
 div.campo >input::placeholder{
     color: rgba(255, 255, 255, 0.767);
