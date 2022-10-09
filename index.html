@@ -8,6 +8,7 @@
     <title>Tela de Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
 </head>
 
 <body>
@@ -21,25 +22,26 @@
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu
                     ambiente.</p>
                 <form action="login.php" method="post" autocomplete="on">
-                        <div id="cemail">
-                            <label for="iemail">♥</label>
-                            <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email"
-                                required>
-                        </div>
-                        <div id="csenha">
-                            <label for="isenha">☻</label>
-                            <input type="password" name="senha" id="isenha" placeholder="sua senha"
-                                autocomplete="current-password" required>
-                        </div>
-                    <p>
-                        <input type="submit" value="Enviar"><br>
-                        <input type="reset" value="Esqueci a Senha">
-                    </p>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email"
+                        required maxlength="30">
+                        <label for="iemail">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha"autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                        <input type="submit" value="Entrar"><br>
+                        <a href="esqueci.html" class="botao">
+                            Esqueci a senha <span class="material-symbols-outlined">mail</span>
+                        </a>
                 </form>
             </div>
         </section>
     </main>
-
+ 
 </body>
 
 </html>
